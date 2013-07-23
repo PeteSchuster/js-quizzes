@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>Site Skeleton</title>
+<meta name="description" content="Site Skeleton is a Boilerplate created by Pete Schuster">
+<meta name="keywords" content="HTML, CSS, Boilerplate">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta property="og:title" content="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="images/ui/facebook.jpg">
+<meta property="og:site_name" content="">
+<meta property="og:description" content="">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ui/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ui/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ui/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="images/ui/apple-touch-icon-57x57-precomposed.png">
+<link rel="shortcut icon" href="images/ui/favicon.ico">
+
+<link href='//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Open+Sans:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css?ver=1.0">
+<link rel="alternate" href="blog/feed/" type="application/rss+xml" title="Site Name's RSS Feed">
+<link rel="canonical" href="">
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie.css?ver=1.0"><![endif]-->
+
+<script src="js/modernizr.min.js"></script>
+
+</head>
+<body>
+
+<header class="header content-block clearfix" role="banner"><div class="wrapper">
+
+  <h1 class="logo"><a href="index.html" rel="home"><span>Site Skeleton</span></a></h1>
+
+  <a id="show-nav" class="button icon-menu show-nav" href="#"><span>Menu</span></a>
+
+  <nav id="nav" class="nav" role="navigation">
+    <h1 class="visuallyhidden">Main Navigation</h1>
+    <ul class="list-primary-nav clearfix">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://github.com/PeteSchuster/js-quizzes">GitHub</a></li>
+      <li><a href="https://github.com/PeteSchuster/js-quizzes/archive/master.zip">Download</a></li>
+    </ul>
+  </nav><!--/end nav-->
+
+</div></header><!--/end .header-->
+
+<div class="content clearfix" role="main">
+
+  <div class="content-block"><div class="wrapper">
+
+    <h1>Grabbing Parents</h1>
+
+    <h5>Goals:</h5>
+    <ol>
+      <li>Use the "active" class and parent selector to reveal the hidden lists.</li>
+    </ol>
+
+    <style>
+      .js-list ul { display: none; }
+      .active > ul { display: block; }
+    </style>
+
+    <ul class="js-list">
+      <li>item
+        <ul>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ul>
+      </li>
+      <li>item</li>
+      <li>item
+        <ul>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item
+            <ul>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>item</li>
+    </ul>
+
+    <!-- PLACE SCRIPT HERE -->
+
+  </div></div><!--/end .content-block-->
+
+</div><!--/end .content-->
+
+<footer class="footer content-block" role="contentinfo"><div class="wrapper">
+
+  <nav>
+    <h1 class="visuallyhidden">Footer Navigation</h1>
+    <ul class="list-footer-nav clearfix">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://github.com/PeteSchuster/js-quizzes">GitHub</a></li>
+      <li><a href="https://github.com/PeteSchuster/js-quizzes/archive/master.zip">Download</a></li>
+    </ul>
+  </nav>
+
+  <p>Copyright 2013. All rights reserved. <a href="#">Sitemap</a>.</p>
+
+</div></footer><!--/end .footer-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/functionality.min.js"></script>
+
+</body>
+</html>

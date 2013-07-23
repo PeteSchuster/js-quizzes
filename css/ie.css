@@ -1,0 +1,50 @@
+/* ===MIXINS=== */
+.wrapper {
+  margin: 0 auto;
+  width: 728px; }
+
+/* ===HEADER START=== */
+.header .logo {
+  float: left; }
+.header .nav {
+  width: auto;
+  display: block!important;
+  position: static;
+  float: right; }
+.header .show-nav {
+  display: none; }
+
+.list-primary-nav {
+  /* for dropdowns */ }
+  .list-primary-nav > li {
+    display: inline-block; }
+  .list-primary-nav > li > a {
+    background: none;
+    border: 0;
+    color: #fff; }
+  .list-primary-nav li {
+    position: relative;
+    z-index: 999; }
+  .list-primary-nav li ul {
+    position: absolute;
+    display: none;
+    z-index: 999;
+    left: 0; }
+  .list-primary-nav li:hover ul,
+  .list-primary-nav li:focus ul {
+    display: block; }
+  .list-primary-nav li li a {
+    padding: .75em;
+    width: 150px;
+    text-decoration: none; }
+  .list-primary-nav li.active li a,
+  .list-primary-nav li li a:hover,
+  .list-primary-nav li li a:focus {
+    background: #666; }
+
+/* ===FOOTER START=== */
+.list-footer-nav li {
+  margin-left: 20px;
+  float: left; }
+.list-footer-nav li:first-child {
+  margin-left: 0; }
