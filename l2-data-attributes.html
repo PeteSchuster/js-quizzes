@@ -6,26 +6,24 @@
 
 <head>
 <meta charset="utf-8">
-<title>JS Tests</title>
-<meta name="description" content="Site Skeleton is a Boilerplate created by Pete Schuster">
-<meta name="keywords" content="HTML, CSS, Boilerplate">
+<title>Lesson 1 - Grabbing Elements</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link href='//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Open+Sans:700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/style.css?ver=1.0">
-<!--[if lte IE 8]><link rel="stylesheet" href="css/ie.css?ver=1.0"><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Open+Sans:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheets/style.css?ver=1.0">
+<!--[if lte IE 8]><link rel="stylesheet" href="stylesheets/ie.css?ver=1.0"><![endif]-->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="js/functionality.min.js"></script>
-<script src="js/modernizr.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="javascripts/functionality.js"></script>
+<script src="javascripts/modernizr.js"></script>
 
 </head>
-<body>
+<body class="l2-data-attributes">
 
 <header class="header content-block clearfix" role="banner"><div class="wrapper">
 
-  <h1 class="logo"><a href="index.html" rel="home"><span>Site Skeleton</span></a></h1>
+  <h1 class="logo"><a href="index.html" rel="home"><span>JS Quizes</span></a></h1>
 
   <a id="show-nav" class="button icon-menu show-nav" href="#"><span>Menu</span></a>
 
@@ -40,65 +38,65 @@
 
 </div></header><!--/end .header-->
 
-<div class="content clearfix" role="main">
+<main class="content clearfix" role="main">
 
-  <div class="content-block"><div class="wrapper">
+    <div class="content-block"><div class="wrapper">
 
-    <h1>Data Attributes</h1>
+<h1>Data Attributes</h1>
 
-    <p>Data attributes are a good way to store information that can be used later.</p>
+<p>Data attributes are a good way to store information that can be used later.</p>
 
-    <h5>Goals:</h5>
-    <ol>
-        <li>Console log all data-name attributes</li>
-        <li>Update the character with an error in his name to use string of text inside the data-name attribute</li>
-    </ol>
+<h5>Goals:</h5>
+<ol>
+    <li>Console log all data-name attributes</li>
+    <li>Update the character with an error in his name to use string of text inside the data-name attribute</li>
+</ol>
 
-    <div id="stage">
+<div id="stage">
 
-        <article class="character" data-name="Megaman" data-image="http://placehold.it/250x250">
-            <h1>Megaman</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article><!--/end .character-->
+    <article class="character" data-name="Megaman" data-image="http://placehold.it/250x250">
+        <h1>Megaman</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article><!--/end .character-->
 
-        <article class="character" data-name="Dr Wilie" data-image="http://placehold.it/250x250">
-            <h1>Error</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article><!--/end .character-->
+    <article class="character" data-name="Dr Wilie" data-image="http://placehold.it/250x250">
+        <h1>Error</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article><!--/end .character-->
 
-        <article class="character" data-name="Dr X" data-image="http://placehold.it/250x250">
-            <h1>Dr X</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article><!--/end .character-->
+    <article class="character" data-name="Dr X" data-image="http://placehold.it/250x250">
+        <h1>Dr X</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article><!--/end .character-->
 
-        <article class="character" data-name="Dust Man" data-image="http://placehold.it/250x250">
-            <h1>Dust Man</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article><!--/end .character-->
+    <article class="character" data-name="Dust Man" data-image="http://placehold.it/250x250">
+        <h1>Dust Man</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article><!--/end .character-->
 
-        <article class="character" data-name="Pharoh Man" data-image="http://placehold.it/250x250">
-            <h1>Pharoh Man</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article><!--/end .character-->
+    <article class="character" data-name="Pharoh Man" data-image="http://placehold.it/250x250">
+        <h1>Pharoh Man</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article><!--/end .character-->
 
-        <article class="character" data-name="Proto Man" data-image="http://placehold.it/250x250">
-            <h1>Proto Man</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article><!--/end .character-->
+    <article class="character" data-name="Proto Man" data-image="http://placehold.it/250x250">
+        <h1>Proto Man</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article><!--/end .character-->
 
-    </div>
+</div>
 
-    <script>
-        jQuery( document ).ready( function(){
+<script>
+    jQuery(document).ready( function () {
 
-            //ADD SCRIPTS HERE!
+        //ADD SCRIPTS HERE!
 
-        } );
-    </script>
+    } );
+</script>
 
-  </div></div><!--/end .content-block-->
+</div></div><!--/end .content-block-->
 
-</div><!--/end .content-->
+</main><!--/end .content-->
 
 <footer class="footer content-block" role="contentinfo"><div class="wrapper">
 
@@ -110,6 +108,8 @@
       <li><a href="https://github.com/PeteSchuster/js-quizzes/archive/master.zip">Download</a></li>
     </ul>
   </nav>
+
+  <p>Copyright 2013. All rights reserved. <a href="#">Sitemap</a>.</p>
 
 </div></footer><!--/end .footer-->
 
